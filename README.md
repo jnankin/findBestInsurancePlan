@@ -37,11 +37,11 @@ You can find example input files in the examples directory.  Each file's first r
 Should contain the following columns:
 
 * **Plan** - the name of the healthcare plan
-* Deductible - the individual deductible (use in network deductible if you have separate deductibles for in or out of network)
-* Copay - copay per regular visit (not specialist visit - again assume in network for simplicity)
-* Coinsurance
-* OPM - Individual out of pocket maximum
-* Premium Type - Either "age" or "total".  If "age", script will look for additional columns that correspond to the monthly premium for each member's age and calculate the total monthly premium.  If "total", will look for a "Premium" column that contains the pre-calculated monthly premium.  If you have the following family members: Josh (31), Julie (30), Jason (6), Ollie (3), Benji (1), the total monthly premium would be the sum of columns ("P_under21" * 3) + P_30 + P_31.  If any of these columns are missing, an exception will be thrown.
+* **Deductible** - the individual deductible (use in network deductible if you have separate deductibles for in or out of network)
+* **Copay** - copay per regular visit (not specialist visit - again assume in network for simplicity)
+* **Coinsurance**
+* **OPM** - Individual out of pocket maximum
+* **Premium Type** - Either "age" or "total".  If "age", script will look for additional columns that correspond to the monthly premium for each member's age and calculate the total monthly premium.  If "total", will look for a "Premium" column that contains the pre-calculated monthly premium.  If you have the following family members: Josh (31), Julie (30), Jason (6), Ollie (3), Benji (1), the total monthly premium would be the sum of columns ("P_under21" * 3) + P_30 + P_31.  If any of these columns are missing, an exception will be thrown.
 
 
 
@@ -49,7 +49,7 @@ Should contain the following columns:
 
 Should contain the following columns:
 
-* Name
-* DOB - Date of birth
-* Extra - How much in USD the family member is estimated to spend in healthcare related costs that are not copays
-* Office Visits - The expected number of times the member is estimated to pay a copay during the year
+* **Name**
+* **DOB** - Date of birth
+* **Extra** - How much in USD the family member is estimated to spend in healthcare related costs that are not copays
+* **Office Visits** - The expected number of times the member is estimated to pay a copay during the year
