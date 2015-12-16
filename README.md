@@ -4,7 +4,7 @@ If you have a CSV with all the insurance plans you're thinking about, and you ha
 
 ## Installation
 
-    git clone 
+    git clone https://github.com/jnankin/findBestInsurancePlan
 
 ## Usage
     
@@ -36,7 +36,7 @@ You can find example input files in the examples directory.  Each file's first r
 
 Should contain the following columns:
 
-* Plan - the name of the healthcare plan
+* **Plan** - the name of the healthcare plan
 * Deductible - the individual deductible (use in network deductible if you have separate deductibles for in or out of network)
 * Copay - copay per regular visit (not specialist visit - again assume in network for simplicity)
 * Coinsurance
